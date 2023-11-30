@@ -841,8 +841,7 @@
       <!-- /style -->
       <hr>
       <!-- footnote -->
-      <h2 class="title is-4 has-text-centered">Footnote provides supplementary descriptions, enabling complex text
-        prompts </h2>
+      <h2 class="title is-4 has-text-centered">Experimental Evaluation of Image Inversion and Image Editing</h2>
       <div class="content has-text-centered">
         <img src="./image_assets/footnote_tri.png" width="150%">
       </div>
@@ -853,26 +852,26 @@
       </div>
       <ul class="nav nav-pills nav-justified" id="prompt-view-ul" style="width: 100%;margin-bottom: 0.5em;">
         <li style="font-size: 0.9em;" class="active"><a href="javascript: void(0);"
-            onclick="ChangePrompt(0);">Livingroom</a>
+            onclick="ChangePrompt(0);">Inversion</a>
         </li>
-        <li style="font-size: 0.9em;" class=""><a href="javascript: void(0);" onclick="ChangePrompt(1);">Cityscape</a>
+        <li style="font-size: 0.9em;" class=""><a href="javascript: void(0);" onclick="ChangePrompt(1);">Editing</a>
         </li>
       </ul>
       <ul class="nav nav-pills nav-justified" id="method-view-ul" style="width: 100%">
         <li style="font-size: 0.9em;" class="active"><a href="javascript: void(0);" onclick="ChangeMethod(0);">Ours</a>
         </li>
-        <li style="font-size: 0.9em;" class=""><a href="javascript: void(0);" onclick="ChangeMethod(1);">Stable
-            Diffusion [4] (Plain-Text)</a></li>
-        <li style="font-size: 0.9em;" class=""><a href="javascript: void(0);" onclick="ChangeMethod(2);">Stable
-            Diffusion [4] (Full-Text)</a></li>
+        <li style="font-size: 0.9em;" class=""><a href="javascript: void(0);" onclick="ChangeMethod(1);">
+            LDIR [5]</a></li>
+        <li style="font-size: 0.9em;" class=""><a href="javascript: void(0);" onclick="ChangeMethod(2);">
+            LDPS [3]</a></li>
         <li style="font-size: 0.9em;" class=""><a href="javascript: void(0);"
-            onclick="ChangeMethod(3);">Attend-and-Excite
-            [3]</a></li>
+            onclick="ChangeMethod(3);">
+            PSLD [3]</a></li>
         <li style="font-size: 0.9em;" class=""><a href="javascript: void(0);" onclick="ChangeMethod(4);">InstructPix2Pix
-            [2]</a></li>
+            P2L [4]</a></li>
         <li style="font-size: 0.9em;" class=""><a href="javascript: void(0);"
-            onclick="ChangeMethod(5);">Prompt-to-Prompt
-            [1]</a></li>
+            onclick="ChangeMethod(5);">
+            Input [1]</a></li>
       </ul>
       <div class="columns is-centered" id="div_cityscape" style="display: none;">
         <div class="column">
