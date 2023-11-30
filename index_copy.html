@@ -525,88 +525,12 @@
                 </div>
               </div>
             </div>
-          </div> 
+          </div>
         </div>
-
-        <div class="content has-text-justified">
-          <hr>
-
-          <h4>
-            Comparison with existing methods:
-          </h4>
-        </div>
-
-
-        <ul class="nav nav-pills nav-justified" id="prompt-view-ul-inv" style="width: 100%;margin-bottom: 0.5em;">
-              <li style="font-size: 0.9em;" class="active"><a href="javascript: void(0);" onclick="ChangePromptInverse(0);">Deblur</a>
-              </li>
-              <li style="font-size: 0.9em;" class=""><a href="javascript: void(0);" onclick="ChangePromptInverse(1);">SR</a>
-              </li>
-              <li style="font-size: 0.9em;" class=""><a href="javascript: void(0);" onclick="ChangePromptInverse(2);">MB</a>
-              </li>
-              <li style="font-size: 0.9em;" class=""><a href="javascript: void(0);" onclick="ChangePromptInverse(3);">Inpaint</a>
-              </li>
-            </ul>
-            <ul class="nav nav-pills nav-justified" id="method-view-ul-inv" style="width: 100%">
-              <li style="font-size: 0.9em;" class="active"><a href="javascript: void(0);" onclick="ChangeMethodInverse(0);">GT</a>
-              </li>
-              <li style="font-size: 0.9em;" class=""><a href="javascript: void(0);" onclick="ChangeMethodInverse(1);">
-                  Input </a></li>
-              <li style="font-size: 0.9em;" class=""><a href="javascript: void(0);" onclick="ChangeMethodInverse(2);">
-                  Ours</a></li>
-              <li style="font-size: 0.9em;" class=""><a href="javascript: void(0);" onclick="ChangeMethodInverse(3);">
-                  P2L</a></li>
-              <li style="font-size: 0.9em;" class=""><a href="javascript: void(0);" onclick="ChangeMethodInverse(4);">
-                  PSLD</a></li>
-              <li style="font-size: 0.9em;" class=""><a href="javascript: void(0);" onclick="ChangeMethodInverse(5);">
-                  LDPS</a></li>
-            </ul>
-            <div class="columns is-centered" id="div_deblur" style="display: true;">
-              <div class="column">
-                <div class="content has-text-centered">
-                  <img src="./image_assets/footnote/deblur/deblur_gt.jpg" id="deblur" width="80%">
-                </div>
-              </div>
-            </div>
-
-            <div class="columns is-centered" id="div_sr" style="display: none;">
-              <div class="column">
-                <div class="content has-text-centered">
-                  <img src="./image_assets/footnote/sr/sr_gt.jpg" id="sr" width="80%">
-                </div>
-              </div>
-            </div>
-
-            <div class="columns is-centered" id="div_mb" style="display: none;">
-              <div class="column">
-                <div class="content has-text-centered">
-                  <img src="./image_assets/footnote/mb/mb_gt.jpg" id="mb" width="80%">
-                </div>
-              </div>
-            </div>
-
-            <div class="columns is-centered" id="div_inpaint" style="display: none;">
-              <div class="column">
-                <div class="content has-text-centered">
-                  <img src="./image_assets/footnote/inpaint/inpaint_gt.jpg" id="inpaint" width="80%">
-                </div>
-              </div>
-            </div>
-
-
-
-
-
       </div>
   </section>
-
-
-
-
-
   <!-- Row 2 for image editing -->
-  <!-- <section class="hero is-light is-small"> -->
-  <section>
+  <section class="hero is-light is-small">
         <div class="hero-body">
           <div class="container is-max-desktop has-text-centered">
             <h2 class="title is-4">STSL for Image Editing</h2>
@@ -660,11 +584,11 @@
                     </div>
                   </div>
                 </div>
-                <!-- <div class="has-text-centered">
+                <div class="has-text-centered">
                   <p>
                     <strong>Motion Blur</strong>
                   </p>
-                </div> -->
+                </div>
               </div>
               <!-- Super-Resolution col 2 -->
               <div class="column">
@@ -690,11 +614,11 @@
                     </div>
                   </div>
                 </div>
-                <!-- <div class="has-text-centered">
+                <div class="has-text-centered">
                   <p>
                     <strong>Super-Resolution (8X)</strong>
                   </p>
-                </div> -->
+                </div>
               </div>              
               <!-- Gaussian Deblur col 3 -->
               <div class="column">
@@ -720,28 +644,28 @@
                     </div>
                   </div>
                 </div>
-                <!-- <div class="has-text-centered">
+                <div class="has-text-centered">
                   <p>
                     <strong>Gaussian Blur</strong>
                   </p>
-                </div> -->
+                </div>
               </div>
               </div>
-              <!-- <div class="content has-text-justified">
+              <div class="content has-text-justified">
                 <h4>
                   Comparison with existing methods:
                 </h4>
               </div>
               <div class="content has-text-centered">
                 <img src="./image_assets/supp_edit_corrupted_tiger_low.png" width="150%">
-              </div> -->
+              </div>
               <!-- Editing cat2fox row 2 -->
             <!-- Motion Deblur col 1 -->
-            <!-- <div class="content has-text-justified">
+            <div class="content has-text-justified">
               <h4>
                 Image editing from corrupted image:
               </h4>
-            </div> -->
+            </div>
             <div class="has-text-centered">          
               <p>                                
                 <font color="blue"> 
@@ -844,63 +768,26 @@
               </div>
               </div>
               <div class="content has-text-justified">
-                <hr>
-
                 <h4>
                   Comparison with existing methods:
                 </h4>
               </div>
-              <!-- <div class="content has-text-centered">
+              <div class="content has-text-centered">
                 <img src="./image_assets/supp_edit_corrupted_cat_low.png" width="150%">
-              </div> -->
-
-              <ul class="nav nav-pills nav-justified" id="prompt-view-ul" style="width: 100%;margin-bottom: 0.5em;">
-                <li style="font-size: 0.9em;" class="active"><a href="javascript: void(0);"
-                    onclick="ChangePrompt(0);">Tiger</a>
-                </li>
-                <li style="font-size: 0.9em;" class=""><a href="javascript: void(0);" onclick="ChangePrompt(1);">Cat</a>
-                </li>
-              </ul>
-              <ul class="nav nav-pills nav-justified" id="method-view-ul" style="width: 100%">
-                <li style="font-size: 0.9em;" class="active"><a href="javascript: void(0);" onclick="ChangeMethod(0);">GT</a>
-                </li>
-                <li style="font-size: 0.9em;" class=""><a href="javascript: void(0);" onclick="ChangeMethod(1);">
-                    Input </a></li>
-                <li style="font-size: 0.9em;" class=""><a href="javascript: void(0);" onclick="ChangeMethod(2);">
-                    Ours</a></li>
-                <li style="font-size: 0.9em;" class=""><a href="javascript: void(0);"
-                    onclick="ChangeMethod(3);">
-                    NTI [2]</a></li>
-                <li style="font-size: 0.9em;" class=""><a href="javascript: void(0);" onclick="ChangeMethod(4);">
-                    Commercial</a></li>
-              </ul>
-              <div class="columns is-centered" id="div_tiger" style="display: true;">
-                <div class="column">
-                  <div class="content has-text-centered">
-                    <img src="./image_assets/footnote/tiger/tiger_gt.jpg" id="tiger" width="80%">
-                  </div>
-                </div>
               </div>
-              <div class="columns is-centered" id="div_cat" style="display: none;">
-                <div class="column">
-                  <div class="content has-text-centered">
-                    <img src="./image_assets/footnote/cat/cat_gt.jpg" id="cat" width="80%">
-                  </div>
-                </div>
-              </div>
-            
         </div>        
       </div>
     </div>
     </div>
   </section>
 
-<!--   <section class="section">
+  <section class="section">
 
-    <div class="container is-max-desktop"> -->
+    <!--/ Matting. -->
+    <div class="container is-max-desktop">
 
       <!-- color -->
-      <!-- <div class="columns is-centered">
+      <div class="columns is-centered">
         <div class="column is-full-width">
           <h2 class="title is-4 has-text-centered"><span style="color: #CD66FF;">F</span><span
               style="color: #FF6599;">o</span><span style="color: #FF0000;">n</span><span
@@ -920,11 +807,11 @@
             <img src="./image_assets/font_color.jpg" width="150%">
           </div>
         </div>
-      </div> -->
+      </div>
       <!-- /color -->
-      <!-- <hr> -->
+      <hr>
       <!-- style -->
-      <!-- <div class="columns is-centered">
+      <div class="columns is-centered">
         <div class="column is-full-width">
           <h2 class="title is-4 has-text-centered"><span style="font-family:sofia;">Font style</span> indicates the
             styles of local regions</h2>
@@ -950,15 +837,14 @@
             </p>
           </div>
         </div>
-      </div> -->
+      </div>
       <!-- /style -->
-      <!-- <hr> -->
+      <hr>
       <!-- footnote -->
-
-
-
-
-      <!-- <h2 class="title is-4 has-text-centered">Experimental Evaluation of Image Inversion and Image Editing</h2>
+      <h2 class="title is-4 has-text-centered">Experimental Evaluation of Image Inversion and Image Editing</h2>
+      <div class="content has-text-centered">
+        <img src="./image_assets/footnote_tri.png" width="150%">
+      </div>
       <div class="content has-text-justified">
         <h4>
           Comparison with existing methods in image editing:
@@ -986,20 +872,50 @@
       </ul>
       <div class="columns is-centered" id="div_cityscape" style="display: none;">
         <div class="column">
+          <div class="has-text-justified">
+            <p>
+              <span style="font-size:1.25em;">a high quality photo of the face of a tiger<sup><span
+                    style="color:green">1</span></sup>
+                    <br><br>
+              </span>              
+              <span style="font-size:1.1em;"><sup><span style="color:green">1</span></sup>
+                leopard</span>
+            </p>
+          </div>
+        </div>
+        <div class="column">
           <div class="content has-text-centered">
-            <img src="./image_assets/footnote/cityscape/cityscape_ours.jpg" id="image_cityscape" width="80%">
+            <img src="./image_assets/footnote/cityscape/cityscape_ours.jpg" id="image_cityscape" width="99%">
           </div>
         </div>
       </div>
       <div class="columns is-centered" id="div_livingroom" style="display: true;">
         <div class="column">
+          <div class="has-text-justified">
+            <p>
+              <span style="font-size:1.25em;">A coffee table<sup><span style="color:red">1</span></sup> sits in front of
+                a sofa<sup><span style="color:rgb(36, 192, 240)">2</span></sup> on a cozy carpet. A painting<sup><span
+                    style="color:green">3</span></sup> on the wall. cinematic lighting, trending on artstation, 4k,
+                hyperrealistic, focused, extreme details. <br><br></span>
+              <span style="font-size:1.1em;"><sup><span style="color:red">1</span></sup>A rustic wooden coffee table
+                adorned with scented candles and many books.</span><br>
+              <span style="font-size:1.1em;"><sup><span style="color:rgb(36, 192, 240)">2</span></sup>A plush sofa with
+                a soft blanket and colorful pillows on it. </span><br>
+              <span style="font-size:1.1em;"><sup><span style="color:green">3</span></sup>A painting of wheat field
+                with a cottage in the distance, close up shot, trending on artstation, cgsociety, hd, calm,
+                complimentary colours, realistic lighting, by Albert Bierstadt, Frederic Edwin Church.</span><br>
+            </p>
+          </div>
+        </div>
+        <div class="column">
           <div class="content has-text-centered">
-            <img src="./image_assets/footnote/livingroom/livingroom_ours.jpg" id="image_livingroom" width="80%">
+            <img src="./image_assets/footnote/livingroom/livingroom_ours.jpg" id="image_livingroom" width="99%">
           </div>
         </div>
       </div>
+      <!-- /footnote -->
     </div>
-  </section> -->
+  </section>
 
   <!-- Method & Workflow -->
   <!-- <section class="hero is-light">
@@ -1035,7 +951,7 @@
   </section> -->
   <!--/ Method & Workflow -->
 
-  <section class="section hero is-light">
+  <section class="section">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column is-full-width">
@@ -1116,8 +1032,8 @@
 
 
   <script type="text/javascript">
-    var currentMethodList = [ 'gt', 'input', 'ours', 'nti', 'commercial'];
-    var currentMethod = "gt";
+    var currentMethodList = ['ours', 'plain', 'full', 'aae', 'ip2p', 'p2p'];
+    var currentMethod = "ours";
 
     function ChangeMethod(idx) {
       var li_list = document.getElementById("method-view-ul").children;
@@ -1127,10 +1043,10 @@
       li_list[idx].className = "nav-link active";
       currentMethod = currentMethodList[idx];
 
-      var tiger = document.getElementById('tiger');
-      var cat = document.getElementById('cat');
-      tiger.src = "./image_assets/footnote/tiger/tiger_" + currentMethod + ".jpg";
-      cat.src = "./image_assets/footnote/cat/cat_" + currentMethod + ".jpg";
+      var image_livingroom = document.getElementById('image_livingroom');
+      var image_cityscape = document.getElementById('image_cityscape');
+      image_livingroom.src = "./image_assets/footnote/livingroom/livingroom_" + currentMethod + ".jpg";
+      image_cityscape.src = "./image_assets/footnote/cityscape/cityscape_" + currentMethod + ".jpg";
     }
     function ChangePrompt(idx) {
       var li_list = document.getElementById("prompt-view-ul").children;
@@ -1138,73 +1054,14 @@
         li_list[i].className = "nav-link";
       }
       li_list[idx].className = "nav-link active";
-      var div_tiger = document.getElementById('div_tiger');
-      var div_cat = document.getElementById('div_cat');
+      var div_livingroom = document.getElementById('div_livingroom');
+      var div_cityscape = document.getElementById('div_cityscape');
       if (idx == 0) {
-        div_tiger.style.display = "";
-        div_cat.style.display = "none";
+        div_livingroom.style.display = "";
+        div_cityscape.style.display = "none";
       } else {
-        div_tiger.style.display = "none";
-        div_cat.style.display = "";
-      }
-    }
-  </script>
-
-
-  <script type="text/javascript">
-    var currentInvMethodList = ['gt', 'input', 'ours', 'p2l', 'psld', 'ldps'];
-    var currentInvMethod = "gt";
-
-    function ChangeMethodInverse(idx) {
-      var li_list = document.getElementById("method-view-ul-inv").children;
-      for (i = 0; i < li_list.length; i++) {
-        li_list[i].className = "nav-link";
-      }
-      li_list[idx].className = "nav-link active";
-      currentInvMethod = currentInvMethodList[idx];
-
-      var deblur = document.getElementById('deblur');
-      var sr = document.getElementById('sr');
-      var mb = document.getElementById('mb');
-      var inpaint = document.getElementById('inpaint');
-      deblur.src = "./image_assets/footnote/deblur/deblur_" + currentInvMethod + ".jpg";
-      sr.src = "./image_assets/footnote/sr/sr_" + currentInvMethod + ".jpg";
-      mb.src = "./image_assets/footnote/mb/mb_" + currentInvMethod + ".jpg";
-      inpaint.src = "./image_assets/footnote/inpaint/inpaint_" + currentInvMethod + ".jpg";
-    }
-    function ChangePromptInverse(idx) {
-      var li_list = document.getElementById("prompt-view-ul-inv").children;
-      for (i = 0; i < li_list.length; i++) {
-        li_list[i].className = "nav-link";
-      }
-      li_list[idx].className = "nav-link active";
-      var div_deblur = document.getElementById('div_deblur');
-      var div_sr = document.getElementById('div_sr');
-      var div_mb = document.getElementById('div_mb');
-      var div_inpaint = document.getElementById('div_inpaint');
-      if (idx == 0) {
-        div_deblur.style.display = "";
-        div_sr.style.display = "none";
-        div_mb.style.display = "none";
-        div_inpaint.style.display = "none";
-      }
-      if (idx == 1) {
-        div_deblur.style.display = "none";
-        div_sr.style.display = "";
-        div_mb.style.display = "none";
-        div_inpaint.style.display = "none";
-      }
-      if (idx == 2) {
-        div_deblur.style.display = "none";
-        div_sr.style.display = "none";
-        div_mb.style.display = "";
-        div_inpaint.style.display = "none";
-      }
-      if (idx == 3) {
-        div_deblur.style.display = "none";
-        div_sr.style.display = "none";
-        div_mb.style.display = "none";
-        div_inpaint.style.display = "";
+        div_livingroom.style.display = "none";
+        div_cityscape.style.display = "";
       }
     }
   </script>
