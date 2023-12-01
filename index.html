@@ -877,14 +877,14 @@
               <div class="columns is-centered" id="div_tiger" style="display: true;">
                 <div class="column">
                   <div class="content has-text-centered">
-                    <img src="./image_assets/footnote/tiger/tiger_gt.png" id="tiger" width="80%">
+                    <img src="./image_assets/footnote/tiger/tiger_gt.png" id="tiger" width="150%">
                   </div>
                 </div>
               </div>
               <div class="columns is-centered" id="div_cat" style="display: none;">
                 <div class="column">
                   <div class="content has-text-centered">
-                    <img src="./image_assets/footnote/cat/cat_gt.jpg" id="cat" width="80%">
+                    <img src="./image_assets/footnote/cat/cat_gt.jpg" id="cat" width="150%">
                   </div>
                 </div>
               </div>
@@ -1129,8 +1129,8 @@
 
       var tiger = document.getElementById('tiger');
       var cat = document.getElementById('cat');
-      tiger.src = "./image_assets/footnote/tiger/tiger_" + currentMethod + ".jpg";
-      cat.src = "./image_assets/footnote/cat/cat_" + currentMethod + ".jpg";
+      tiger.src = "./image_assets/footnote/tiger/tiger_" + currentMethod + ".png";
+      cat.src = "./image_assets/footnote/cat/cat_" + currentMethod + ".png";
     }
     function ChangePrompt(idx) {
       var li_list = document.getElementById("prompt-view-ul").children;
@@ -1167,10 +1167,10 @@
       var sr = document.getElementById('sr');
       var mb = document.getElementById('mb');
       var inpaint = document.getElementById('inpaint');
-      deblur.src = "./image_assets/footnote/deblur/deblur_" + currentInvMethod + ".jpg";
-      sr.src = "./image_assets/footnote/sr/sr_" + currentInvMethod + ".jpg";
-      mb.src = "./image_assets/footnote/mb/mb_" + currentInvMethod + ".jpg";
-      inpaint.src = "./image_assets/footnote/inpaint/inpaint_" + currentInvMethod + ".jpg";
+      deblur.src = "./image_assets/footnote/deblur/deblur_" + currentInvMethod + ".png";
+      sr.src = "./image_assets/footnote/sr/sr_" + currentInvMethod + ".png";
+      mb.src = "./image_assets/footnote/mb/mb_" + currentInvMethod + ".png";
+      inpaint.src = "./image_assets/footnote/inpaint/inpaint_" + currentInvMethod + ".png";
     }
     function ChangePromptInverse(idx) {
       var li_list = document.getElementById("prompt-view-ul-inv").children;
