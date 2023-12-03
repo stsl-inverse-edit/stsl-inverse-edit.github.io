@@ -195,18 +195,46 @@
       </div>
     </div>
   </section>
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop has-text-centered">
+      <h2 class="title is-4">Abstract</h2>
+      <p>
+        Sampling from the posterior distribution poses a major computational challenge in solving inverse problems using latent diffusion models.
+        Common methods rely on Tweedie's first-order moments, which are known to induce <b>a quality-limiting bias</b>.
+        Existing second-order approximations are impractical due to prohibitive computational costs, making standard reverse diffusion processes intractable for posterior sampling.
+      </p>
+      <p>
+        <b>This paper introduces Second-order Tweedie sampler from Surrogate Loss (STSL), a novel sampler that offers efficiency comparable to first-order Tweedie with a tractable reverse process using second-order approximation.</b>
+        Our theoretical results reveal that the second-order approximation is lower bounded by our surrogate loss that only requires <b>O(1)</b> compute using the trace of the Hessian, and by the lower bound we derive a new drift term to make the reverse process tractable.
+        Our method surpasses SoTA solvers PSLD[3] and P2L[4], achieving <b>4X</b> and <b>8X</b> reduction in neural function evaluations, respectively, while notably enhancing sampling quality on FFHQ, ImageNet, and COCO benchmarks.
+        In addition, </b>we show STSL extends to text-guided image editing and addresses residual distortions present from corrupted images in leading text-guided image editing methods.</b>
+      </p>
+      <p>
+        <b>To our best knowledge, this is the first work to offer an efficient second-order approximation in solving inverse problems using latent diffusion and editing real-world images with corruptions.</b>
+      </p>
+    </div>
+  </div>
+
+</section>
+
   <section>
     <div class="hero-body">
       <div class="container is-max-desktop has-text-centered">
         <h2 class="title is-4">STSL for Image Inversion</h2>
-        <div class="has-text-justified">
+        <!-- <div class="has-text-justified">
           <p>
-            We present an efficient second-order approximation using Tweedie's formula to mitigate the bias incurred in the
-            widely used first-order samplers. With this method, we
-            devise a surrogate loss function to refine the reverse process at every diffusion step to address inverse problems.
+            We present the Second-order Tweedie sampler from Surrogate Loss (STSL), a novel methodology that effectively integrates the computational efficiency of first-order Tweedie samplers with the enhanced robustness of a second-order approximation. This methodological innovation marks a significant advancement in the field, achieving a substantial leap in computational efficiency, evidenced by requiring only 250 Neural Function Evaluations (NFEs).
+          </p>
+          <p>
+            STSL not only reduces computational demands but also significantly improves sampling quality, as demonstrated through rigorous testing on various benchmarks such as FFHQ, ImageNet, and COCO datasets. This underscores STSL's ability to optimize computational resources while maintaining, or even enhancing, the quality of results.
+            
+          </p>
+          <p>
+          Extending its utility beyond traditional applications, STSL exhibits exceptional capabilities in the domain of text-guided image editing. It effectively addresses the challenge of correcting residual distortions in corrupted images, a notable gap in existing methodologies. This breakthrough in STSL not only exemplifies the first efficient application of second-order approximation within latent diffusion models for inverse problem-solving but also pioneers new avenues for real-world image editing under corruption constraints.
           </p>
           <br>
-        </div>
+        </div> -->
         <!-- Motion Deblur row 1 -->
         <div class="content has-text-justified">
           <h4>
@@ -564,7 +592,7 @@
             <div class="columns is-centered" id="div_deblur" style="display: true;">
               <div class="column">
                 <div class="content has-text-centered">
-                  <img src="./image_assets/footnote/deblur/deblur_gt.jpg" id="deblur" width="200%">
+                  <img src="./image_assets/footnote/deblur/deblur_gt.png" id="deblur" width="200%">
                 </div>
               </div>
             </div>
@@ -572,7 +600,7 @@
             <div class="columns is-centered" id="div_sr" style="display: none;">
               <div class="column">
                 <div class="content has-text-centered">
-                  <img src="./image_assets/footnote/sr/sr_gt.jpg" id="sr" width="200%">
+                  <img src="./image_assets/footnote/sr/sr_gt.png" id="sr" width="200%">
                 </div>
               </div>
             </div>
@@ -580,7 +608,7 @@
             <div class="columns is-centered" id="div_mb" style="display: none;">
               <div class="column">
                 <div class="content has-text-centered">
-                  <img src="./image_assets/footnote/mb/mb_gt.jpg" id="mb" width="200%">
+                  <img src="./image_assets/footnote/mb/mb_gt.png" id="mb" width="200%">
                 </div>
               </div>
             </div>
@@ -588,7 +616,7 @@
             <div class="columns is-centered" id="div_inpaint" style="display: none;">
               <div class="column">
                 <div class="content has-text-centered">
-                  <img src="./image_assets/footnote/inpaint/inpaint_gt.jpg" id="inpaint" width="200%">
+                  <img src="./image_assets/footnote/inpaint/inpaint_gt.png" id="inpaint" width="200%">
                 </div>
               </div>
             </div>
@@ -1167,10 +1195,10 @@
       var sr = document.getElementById('sr');
       var mb = document.getElementById('mb');
       var inpaint = document.getElementById('inpaint');
-      deblur.src = "./image_assets/footnote/deblur/deblur_" + currentInvMethod + ".jpg";
-      sr.src = "./image_assets/footnote/sr/sr_" + currentInvMethod + ".jpg";
+      deblur.src = "./image_assets/footnote/deblur/deblur_" + currentInvMethod + ".png";
+      sr.src = "./image_assets/footnote/sr/sr_" + currentInvMethod + ".png";
       mb.src = "./image_assets/footnote/mb/mb_" + currentInvMethod + ".png";
-      inpaint.src = "./image_assets/footnote/inpaint/inpaint_" + currentInvMethod + ".jpg";
+      inpaint.src = "./image_assets/footnote/inpaint/inpaint_" + currentInvMethod + ".png";
     }
     function ChangePromptInverse(idx) {
       var li_list = document.getElementById("prompt-view-ul-inv").children;
